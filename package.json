@@ -37,7 +37,7 @@
 	},
 	"scripts": {
 		"start": "cross-env PORT=7369 craco start",
-		"build": "craco build",
+		"build": "cross-env PORT=7369 craco build",
 		"test": "craco test",
 		"eject": "craco eject"
 	},

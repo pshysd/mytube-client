@@ -75,7 +75,7 @@ function SignUp() {
 	return (
 		<Wrapper>
 			<h2>회원가입</h2>
-			<Form onFinish={formik.handleSubmit} {...formItemLayout}>
+			<Form onFinish={formik.handleSubmit} method="post" {...formItemLayout}>
 				<Form.Item required label="name">
 					<Input id="name" placeholder="이름을 입력해주세요." type="text" {...formik.getFieldProps('name')} />
 					{formik.touched.name && formik.errors.name ? <div>{formik.errors.name}</div> : null}

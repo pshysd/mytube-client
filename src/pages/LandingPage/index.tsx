@@ -10,7 +10,7 @@ const { Title } = Typography;
 function LandingPage() {
 	console.log('Landing Page Rendered');
 
-	const { data: videos } = useSWR('/api/videos', fetcher);
+	const { data: videos } = useSWR<IVideo[]>('/api/videos', fetcher);
 
 	return (
 		<Wrapper>
